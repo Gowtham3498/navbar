@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAM BURGER NAV BAR</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <nav>
+        <div class="logo">
+
+            <a href="">SYMBOL</a>
+        </div>
+<ul>
+
+    <li><a href="">HOME</a></li>
+    <li><a href="">ABOUT</a></li>
+    <li><a href="">SERVICES</a></li>
+    <li><a href="">CONTACT</a></li>
+</ul>
+
+<div class="menu">
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+
+</div>
+
+    </nav>
+
+    <script>
+
+        const menu = document.querySelector('.menu')
+        const menulist = document.querySelector('nav ul')
+        menu.addEventListener('click',()=>{
+            menulist.classList.toggle('showmenu')
+
+        })
+    </script>
+</body>
+</html>

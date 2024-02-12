@@ -1,0 +1,66 @@
+body{
+    padding:0;
+    margin: 0;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+nav{
+    display: flex;
+    width: 100%;
+    background-color: crimson;
+    justify-content: space-around;
+}
+nav li{
+    display: inline-block;
+    margin: 0 10px;
+}
+.logo{
+    margin-top:15px;
+    font-weight: bolder;
+}
+nav a{
+    text-decoration: none;
+}
+nav a:hover{
+    color: whitesmoke;
+}
+.menu-line{
+    width: 20px;
+    height: 3px;
+    margin-bottom: 3px;
+    background-color: darkslateblue;
+    margin-top: 3px;
+}.menu{
+    margin-top: 12px;
+    display: none;
+}
+@media all and (max-width:640px){
+    nav{
+        flex-direction: column;
+    }
+     nav li{
+        display: block;
+        padding: 5px 0;
+    } 
+    nav ul{
+        text-align: center;
+        padding: 0;
+        display: none;
+       
+}
+.menu{
+    display: block;
+    position: absolute;
+    top:5px;
+    right:20px
+}
+.logo{
+    align-self: flex-start;
+    margin: 20px 30px;
+}
+.showmenu{
+    display: block;
+}
+}
